@@ -47,7 +47,7 @@ jobs:
 
       - name: Build and Push Docker Images
         run: |
-          docker build -t aman585/todo-backend ./backend
-          docker build -t aman585/todo-frontend ./frontend
-          docker push aman585/todo-backend
-          docker push aman585/todo-frontend
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/todo-backend ./backend
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/todo-frontend ./frontend
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/todo-backend
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/todo-frontend
