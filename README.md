@@ -21,5 +21,5 @@ http://localhost:5173/
 
 # to access mongo-express
 ```bash
-http://localhost:8081/
+http://localhost:8081
 ```
